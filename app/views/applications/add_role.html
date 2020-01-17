@@ -1,0 +1,106 @@
+{% extends "layout_unbranded.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block beforeContent %}
+{% endblock %} {% block content %}
+
+
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+        <a href="people_management" class="govuk-back-link">Back</a>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl">Add role</h1>
+
+
+
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="name-on-the-account">
+                        Name
+                    </label>
+                    <input class="govuk-input" id="name-on-the-account" name="name-on-the-account" type="text" spellcheck="false">
+                </div>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort-code">
+                        Email address
+                    </label>
+                    <input class="govuk-input govuk-input--width-15" id="sort-code" name="sort-code" type="text" aria-describedby="sort-code-hint"
+                        spellcheck="false">
+                </div>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="account-number">
+                        Staff ID
+                    </label>
+                    <input class="govuk-input govuk-input--width-15" id="account-number" name="account-number" type="text" aria-describedby="account-number-hint"
+                        spellcheck="false" inputmode="numeric" pattern="[0-9]*">
+                </div>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="roll-number">
+                        Role
+                    </label>
+                    <input class="govuk-input govuk-input--width-15" id="roll-number" name="roll-number" type="text" aria-describedby="roll-number-hint"
+                        spellcheck="false">
+                </div>
+                <h2 class="govuk-heading-s">Service access</h2>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+
+                        <div class="govuk-checkboxes">
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                    Siebel
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                    Bancslink
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Documentum
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Adobe
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    OpsMI
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <a href="people_management" role=button class="govuk-button" data-module="govuk-button">
+                    Add user
+                </a>
+            </div>
+    </main>
+    </div>
+
+
+
+
+
+
+
+
+
+    </main>
+</div>
+
+
+{% endblock %}
